@@ -1,0 +1,27 @@
+.page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--page-bg-color);
+  min-height: 100vh;
+  color: rgb(var(--foreground-rgb));
+}
+
+.top {
+  min-height: 100px;
+}
+
+.middle {
+  min-height: 100px;
+  flex-grow: 1;
+  position: relative;
+}
+
+.bottom {
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+}
