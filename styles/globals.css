@@ -1,0 +1,141 @@
+:root {
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+
+    --foreground-rgb: 255, 255, 255;
+    --background-color: #1E1E1E;
+
+    --page-bg-color: #000916;
+    --font-size-title: 2.5rem;
+    --font-size-subtitle: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: var(--background-color);
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--page-bg-color);
+  min-height: 100vh;
+  color: rgb(var(--foreground-rgb));
+}
+
+.avatarDiv {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.box {
+  display: flex;
+  height: fit-content;
+  padding: 0.4rem;
+}
+
+.box  .MuiCard-root {
+  margin-right: 0.5rem;
+}
+
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+/* Example Styles for React Tags*/
+#app {
+  padding: 40px;
+}
+
+div.ReactTags__tags {
+    position: relative;
+}
+
+/* Styles for the input */
+div.ReactTags__tagInput {
+    width: 6rem;
+    margin-bottom: 0.3rem;
+    display: inline-block;
+}
+div.ReactTags__tagInput input.ReactTags__tagInputField,
+div.ReactTags__tagInput input.ReactTags__tagInputField:focus {
+    height: 1.65rem;
+    margin: 0;
+    font-size: 0.75rem;
+    width: 100%;
+    border: 1px solid #4B115C;
+    padding: 0 0.25rem;
+    background: transparent;
+    color: white;
+    outline: none;
+}
+
+/* Styles for selected tags */
+div.ReactTags__selected span.ReactTags__tag {
+    border: 1px solid #4B115C;
+    background: #4B115C;
+    font-size: 0.75rem;
+    display: inline-block;
+    padding: 0.125rem;
+    margin: 0 0.3rem 0.3rem 0;
+    cursor: default !important;
+    border-radius: 0.25rem;
+    color: white;
+
+}
+div.ReactTags__selected .ReactTags__remove {
+    background: transparent;
+    border: none;
+    color: white;
+    margin-left: 0.3rem;
+    cursor: pointer;
+}
+
+/* Styles for suggestions */
+div.ReactTags__suggestions {
+    position: absolute;
+    color: #000 !important;
+    font-weight: normal !important;
+    font-size: 0.75rem !important;
+}
+div.ReactTags__suggestions ul {
+    list-style-type: none;
+    box-shadow: .05em .01em .5em rgba(0,0,0,.2);
+    background: white;
+    width: 8rem;
+}
+div.ReactTags__suggestions li {
+    border-bottom: 1px solid #ddd;
+    padding: 0.25rem;
+    margin: 0;
+}
+div.ReactTags__suggestions li mark {
+    text-decoration: underline;
+    background: none;
+    font-weight: 600;
+}
+div.ReactTags__suggestions ul li.ReactTags__activeSuggestion {
+    background: #b7cfe0;
+    cursor: pointer;
+}
